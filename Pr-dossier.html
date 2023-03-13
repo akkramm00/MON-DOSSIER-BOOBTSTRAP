@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>list</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    .head {
+      height: 70px;
+    }
+
+    .circle {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: grey;
+      color: white;
+    }
+
+    nav ul {
+      width: 100%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      border-top: 1px black solid;
+
+    }
+
+    nav li {
+      float: left;
+    }
+
+    nav li a {
+      display: block;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: white;
+    }
+
+    nav .about {
+      float: right;
+    }
+
+    section {
+      margin-top: 20px;
+    }
+
+    table td,
+    table th {
+      text-align: center;
+      padding: 5px;
+    }
+
+    .white {
+      color: white;
+      text-decoration: none;
+    }
+
+    .none {
+      text-decoration: none;
+    }
+
+    .light {
+      color: lightgray;
+    }
+
+    .caddy {
+      color: cadetblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="head row">
+        <div class="col-8 p-2">
+          <h2>Mon titre de site</h2>
+        </div>
+        <div class="col">
+          <div class="row align-item-center justify-content-end p-2">
+            <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <ul class="list bg-primary">
+          <li><a href="#">Home</a></li>
+          <li><a class="light" href="#">Accessoires</a></li>
+          <li><a class="light" href="#">Cartes mères</a></li>
+          <li><a class="light" href="#">Cartes graphiques</a></li>
+          <li class="about"><a href="#">A propos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="row justify-content-between">
+        <div class="col-md-4 col-xl-2">
+          <aside>
+            <ul class="list-unstyled list-group">
+              <li class="list-group-item bg-primary text-white"><a class="white" href="#">Mon premiere article</a></li>
+              <li class="list-group-item"><a class="none" href="#">Mon second article</a></li>
+              <li class="list-group-item"><a class="none" href="#">Mon troisieme article</a></li>
+              <li class="list-group-item"><a class="none" href="#">Mon cinquieme article</a></li>
+            </ul>
+          </aside>
+        </div>
+        <div class="col">
+          <article>
+            <h1>Mon premier article</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique augue non nibh imperdiet dictum.
+              In hac habitasse platea dictumst.
+              Donec porttitor odio ante, vitae rutrum nunc fringilla id. Etiam fermentum tellus eu arcu malesuada,
+              consectetur semper arcu consectetur.
+              In hac habitasse platea dictumst. Sed elit metus, efficitur non urna vel, consectetur mollis nunc. Duis
+              porttitor orci nulla, et euismod dolor condimentum ac.
+            <p>In urna lorem, maximus vitae dolor in, ullamcorper maximus purus. Mauris lacus mauris, facilisis vel
+              mattis ac, blandit rutrum ante. </p>
+            Morbi fringilla enim in justo molestie, vitae euismod est faucibus. Sed aliquam ligula sed orci sagittis
+            condimentum. Ut porta orci eget ex interdum,
+            ac pellentesque odio sodales. Nam vel elit non dui eleifend dignissim id dapibus massa.</p>
+            <p>Vestibulum vel placerat odio. Nullam maximus sagittis sapien nec accumsan. Fusce at auctor odio. Fusce
+              ut nunc vitae diam iaculis laoreet eu et nulla.
+              Donec lacus ante, pulvinar eu mollis a, auctor vitae ex. Sed ut molestie ligula. Pellentesque quis eros
+              et sapien lacinia suscipit.
+              Suspendisse tristique dui at dapibus laoreet. Fusce viverra eget elit nec laoreet.</p>
+            <h4>Prix des écrans</h4>
+            <table class="table table-striped">
+              <thead>
+                <tr class="table bg-primary text-white ">
+                  <th></th>
+                  <th>15 pouces</th>
+                  <th>17 pouces</th>
+                  <th>19 pouces</th>
+                  <th>21 pouces</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Asus</th>
+                  <td>100€</td>
+                  <td>150€</td>
+                  <td>200€</td>
+                  <td>300€</td>
+                  <td class="caddy"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                      class="bi bi-cart-plus" viewBox="0 0 16 16">
+                      <path
+                        d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
+                      <path
+                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg></td>
+                </tr>
+                <tr>
+                  <th>Dell</th>
+                  <td>80€</td>
+                  <td>120€</td>
+                  <td>140€</td>
+                  <td>200€</td>
+                  <td class="caddy"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                      class="bi bi-cart-plus" viewBox="0 0 16 16">
+                      <path
+                        d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
+                      <path
+                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg></td>
+                </tr>
+                <tr>
+                  <th>Acer</th>
+                  <td>130€</td>
+                  <td>180€</td>
+                  <td>260€</td>
+                  <td>350€</td>
+                  <td class="caddy"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                      class="bi bi-cart-plus" viewBox="0 0 16 16">
+                      <path
+                        d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
+                      <path
+                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg></td>
+                </tr>
+                <tr>
+                  <th>Samsung</th>
+                  <td>60€</td>
+                  <td>100€</td>
+                  <td>160€</td>
+                  <td>240€</td>
+                  <td class="caddy"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                      class="bi bi-cart-plus" viewBox="0 0 16 16">
+                      <path
+                        d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
+                      <path
+                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+<script src="script.js"></script>
+
+<!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+<script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
