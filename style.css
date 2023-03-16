@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Redressed&display=swap');
+.H-navbar{
+    background:rgba(0,0,0, .55);
+    font-family:'Merryweather',serif;
+    box-shadow:1px 1px 1px rgba(255,255,255,.54);
+    z-index:50;
+
+}
+.merriweather{
+    font-family:'Merriweather',serif;
+}
+.redressed{
+    font-family:'redressed',cursive;
+}
+
+.btn-order{
+    color:var(--bs-teal);
+    border:1px solid var(--bs-teal);
+    transition:0.5s;
+
+}
+.btn-order:hover,
+.btn-order:active{
+    color:white;
+    background-color:var(--bs-teal);
+}
+.H-navbar .nav-link{
+border-bottom:2px solid transparent;
+transition:padding-bottom 0.4s ease-in-out,border-color 0.3s ease;
+}
+.H-navbar .nav-link:hover{
+    padding-bottom:20px;
+    border-bottom-color:var(--bs-teal);
+}
+.nav-tabs{
+    box-shadow: none;
+}
+
+.card-title{
+    color:rgb(3, 95, 8);
+    font-size:30px;
+}
+
+
+.banner{
+    height:800px;
+    background:linear-gradient(rgba(0, 0, 0,.5),rgba(0, 0, 0,.5)),url(https://st.depositphotos.com/2627021/3653/i/950/depositphotos_36531943-stock-photo-massage-composition-spa-with-candles.jpg) center center fixed no-repeat;
+    background-size:cover;
+}
+.di-flex{
+    height:460px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    margin:auto;
+   
+}
+.H-menu{
+    height:1800px;
+    background:linear-gradient(rgba(0, 0, 0,.5),rgba(0, 0, 0,.5)),url(https://cdn.pixabay.com/photo/2018/08/16/02/01/purple-3609478_640.jpg) center center fixed no-repeat;
+    background-size:cover;
+}
+.order-form{
+    height:800px;
+    background:linear-gradient(rgba(0, 0, 0,.5),rgba(0, 0, 0,.5)),url(https://cdn.pixabay.com/photo/2018/08/16/02/01/purple-3609478_640.jpg) center center fixed no-repeat;
+    background-size:cover;  
+}
+
+.btncolor:hover{
+border:solid 2px white;
+background:rgb(24, 211, 211);
+padding:10px;
+}
+.h-footer{
+    height:100px;
+}
